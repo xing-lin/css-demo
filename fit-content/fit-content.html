@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cw-dialog {
+        /* 这里不去限制宽高。自适应居中，也可以用 transform 居中，但是会占用该属性导致动画冲突 */
+        /* width: 300px;
+        height: 200px; */
+        
+        /* width: fit-content; */
+        max-width: 500px;
+        height: fit-content;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cw-dialog">
+      我们在这里所做的是采用一个脆弱的、非 DRY 系统，并使其更 DRYer 和更健壮。
+      我们确定了在 CSS 和 JS
+      之间共享变量的需求，并发现当变量需要更改时，最简单的解决方案（将相同的变量存储在两个不同的文件中）可能会失败。
+      您现在拥有了在 CSS 和 JS
+      之间共享任何变量的工具，并且可以在一个地方根据需要更新值。该解决方案提供了一种更强大的变量共享方式，并且在变量值更改时中断的可能性要小得多。
+      我在这里展示了一个简单的解决方案，只有一个共享变量。并且为一个简单的应用程序进行设置花费了很多精力，但这只是一个例子。在更大、更复杂的项目上尝试一下，我认为您会发现这是值得的。
+      不再需要查找和替换搜索。不会再有忘记在某处更新元素高度实例的困扰。并且不再有随机错误，至少与您这样存储的
+      CSS/JS 变量无关。 如果您还不知道，我强烈建议您使用此设置在需要的地方共享
+      CSS 和 JS 变量。未来——你会感激你所做的。
+    </div>
+  </body>
+</html>
